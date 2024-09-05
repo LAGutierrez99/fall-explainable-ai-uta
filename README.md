@@ -8,8 +8,8 @@
 
 ## Prerequisites
 Before starting, ensure you have the following installed/ signed up:
-- [Git](https://git-scm.com/downloads)
-- [GitLab Account](https://gitlab.com/users/sign_in)
+- [Git]
+- [Github Account](https://github.com/)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop)
 
 ## Setup Instructions
@@ -18,7 +18,7 @@ Before starting, ensure you have the following installed/ signed up:
 
 1. **Create Directory**
    - Create a directory on your local computer for class (i.e XAI-Fall).
-   - This will be used to store all your notebooks (and is seperate from the diretory used to clone the repo in the below steps)
+   - This will be used to store all your notebooks (and is separate from the directory used to clone the repo in the below steps)
 
 2. **Install Docker Desktop**
    - Ensure Docker Desktop is installed and running in the background.
@@ -41,6 +41,6 @@ Before starting, ensure you have the following installed/ signed up:
      ```
 
 6. **Access Jupyter Lab**
-   - Open your browser and go to [http://localhost:10000/lab](http://localhost:8888/lab).
+   - Open your browser and go to [http://localhost:10000](http://localhost:10000/).
 
 ### Windows

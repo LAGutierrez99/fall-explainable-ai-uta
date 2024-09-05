@@ -31,17 +31,16 @@ Before starting, ensure you have the following installed/ signed up:
    - Navigate to the directory of the cloned repo (optional create branch)
    - This step is for building the Docker image. Run the following command for the first time setup or everytime after pulling changes:
      ```bash
-     docker build . -t emotivo_env
+     docker build . -t xai_dev
      ```
 
 5. **Run Docker Container**
-   - Ensure Docker Desktop is running in the background. Run the following command to start the container:
+   - Ensure Docker Desktop is running in the background, and the build in the previous step completely successfully. Run the following command to start the container:
      ```bash
-     docker container run -it -p 8888:8888 --volume path_to_your_directory:/home/jovyan/work path_to_your_directory jupyter lab --NotebookApp.token=''
+     docker container run -it -p 10000:8888 --volume path_to_your_directory:/home/jovyan/work jupyter lab --NotebookApp.token=''
      ```
 
 6. **Access Jupyter Lab**
-   - Open your browser and go to [http://localhost:8888/lab](http://localhost:8888/lab).
-   - You should see the Jupyter notebook interface.
+   - Open your browser and go to [http://localhost:10000/lab](http://localhost:8888/lab).
 
 ### Windows

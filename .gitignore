@@ -1,0 +1,47 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python virtual environments
+.env/
+.venv/
+env/
+venv/
+
+# Environment variable files (secrets)
+.env
+
+# VSCode and Cursor settings
+.vscode/
+.cursor/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Jupyter runtime logs
+*.log
+*.pid
+*.sqlite
+.jupyter_ai_config.toml
+
+# Docker-specific
+*.tar
+*.log
+docker-compose.override.yml
+# Local Docker volumes
+**/data/
+
+# Node modules (if using jupyterlab extensions or UI)
+node_modules/
+yarn.lock
+package-lock.json
+
+# Optional: compiled notebooks (if exporting to PDF/HTML)
+*.pdf
+*.html
+

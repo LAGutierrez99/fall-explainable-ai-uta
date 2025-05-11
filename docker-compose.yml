@@ -1,0 +1,13 @@
+version: '0'
+
+services:
+  notebook:
+    build:
+      context: .infra     # Point build context to infra folder
+    ports:
+      - "8888:8888"      # Change to 10000 to avoid conflict with default port 8888
+    volumes:
+      - /Users/louisgutierrez/Documents/xai_dev_env:/app
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - HUGGINGFACEHUB_API_TOKEN=${HUGGINGFACEHUB_API_TOKEN}

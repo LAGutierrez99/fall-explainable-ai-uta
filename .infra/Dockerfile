@@ -22,4 +22,11 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Start JupyterLab
-CMD ["jupyter", "lab", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root", "--notebook-dir=/app"]
+CMD ["jupyter", "lab", \ 
+     "--ip=0.0.0.0", \ 
+     "--port=8888", \ 
+     "--no-browser", \ 
+     "--allow-root", \ 
+     "--NotebookApp.token=''", \ 
+     "--NotebookApp.password=''", \ 
+     "--notebook-dir=/app"]
